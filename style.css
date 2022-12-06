@@ -1,0 +1,133 @@
+body {
+  padding: 100px 0 0 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.evolution {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.evolution h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.evolution p {
+  font-size: 1.5rem;
+}
+.links {
+  background-color: #000;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.links > * {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  margin: 5px 0;
+  padding: 1rem;
+  background-color: #fff;
+  color: #000;
+}
+
+#farm {
+  padding: 20px;
+  overflow: auto;
+}
+.tomato-tree {
+  display: flex;
+  justify-content: space-between;
+  overflow-x: auto;
+}
+.tomato {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+.tomato-head {
+  width: 10%;
+  height: 20%;
+  background-color: rgb(0, 50, 0);
+  border-radius: 25%;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tomato-body {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.currentGeneration,
+.currentValues,
+.currentChance {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: black;
+  color: white;
+  z-index: 999;
+  padding: 5px;
+  display: block;
+}
+
+.currentValues {
+  top: 30px;
+}
+.currentChance {
+  top: 50px;
+}
+
+.modal {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: rgb(239, 206, 206);
+  text-align: center;
+  word-wrap: break-word;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.modal-body {
+  padding: 30px;
+}
+
+.close {
+  display: none;
+}
+
+#naturalSelection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nature {
+  width: 600px;
+  height: 600px;
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+}
+.individual {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #fff;
+}
